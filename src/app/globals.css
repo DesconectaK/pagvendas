@@ -1,0 +1,144 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: var(--font-roboto), Arial, Helvetica, sans-serif;
+  @apply uppercase;
+}
+
+@layer base {
+  :root {
+    --background: 0 0% 0%; /* Pure Black */
+    --foreground: 28 100% 60%; /* Orange #ff8f35 - For primary text elements like headings */
+
+    --card: 0 0% 0%; /* Black for cards */
+    --card-foreground: 0 0% 100%; /* White for card text */
+
+    --popover: 0 0% 0%; /* Black for popovers */
+    --popover-foreground: 0 0% 100%; /* White for popover text */
+
+    --primary: 28 100% 60%; /* Orange #ff8f35 for primary interactive elements BG */
+    --primary-foreground: 0 0% 100%; /* White for text on primary elements */
+
+    --secondary: 0 0% 0%; /* Black for secondary backgrounds */
+    --secondary-foreground: 0 0% 100%; /* White for general body text */
+
+    --muted: 0 0% 0%; /* Black for muted backgrounds */
+    --muted-foreground: 0 0% 100%; /* White for muted text (e.g., card descriptions) */
+
+    --accent: 28 100% 60%; /* Orange #ff8f35 for general accents */
+    --accent-foreground: 0 0% 100%; /* White for text on orange accents */
+
+    --destructive: 0 84.2% 60.2%; /* Original Red */
+    --destructive-foreground: 0 0% 100%; /* White text for destructive */
+
+    --border: 0 0% 20%; /* Mid Gray for borders (visible on black) */
+    --input: 0 0% 0%; /* Black for input backgrounds */
+    --input-foreground: 0 0% 100%; /* White for input text */
+    --ring: 28 100% 60%; /* Orange #ff8f35 for focus rings */
+
+    --chart-1: 28 100% 80%; /* Lighter orange */
+    --chart-2: 28 100% 70%;
+    --chart-3: 28 100% 60%; /* Base orange #ff8f35 */
+    --chart-4: 28 100% 50%;
+    --chart-5: 28 100% 40%; /* Darker orange */
+    --radius: 0.5rem;
+
+    /* Sidebar colors - kept consistent with main theme */
+    --sidebar-background: 0 0% 0%;
+    --sidebar-foreground: 28 100% 60%;
+    --sidebar-primary: 28 100% 60%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 28 100% 60%;
+    --sidebar-accent-foreground: 0 0% 100%;
+    --sidebar-border: 0 0% 15%;
+    --sidebar-ring: 28 100% 60%;
+  }
+
+  .dark {
+    --background: 0 0% 0%;
+    --foreground: 28 100% 60%;
+
+    --card: 0 0% 0%;
+    --card-foreground: 0 0% 100%; /* White for card text */
+
+    --popover: 0 0% 0%;
+    --popover-foreground: 0 0% 100%; /* White for popover text */
+
+    --primary: 28 100% 60%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 0 0% 0%;
+    --secondary-foreground: 0 0% 100%; /* White for general body text */
+
+    --muted: 0 0% 0%;
+    --muted-foreground: 0 0% 100%;
+
+    --accent: 28 100% 60%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 0 0% 20%;
+    --input: 0 0% 0%;
+    --input-foreground: 0 0% 100%;
+    --ring: 28 100% 60%;
+
+    --chart-1: 28 100% 80%;
+    --chart-2: 28 100% 70%;
+    --chart-3: 28 100% 60%;
+    --chart-4: 28 100% 50%;
+    --chart-5: 28 100% 40%;
+
+    /* Sidebar colors */
+    --sidebar-background: 0 0% 0%;
+    --sidebar-foreground: 28 100% 60%;
+    --sidebar-primary: 28 100% 60%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 28 100% 60%;
+    --sidebar-accent-foreground: 0 0% 100%;
+    --sidebar-border: 0 0% 15%;
+    --sidebar-ring: 28 100% 60%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-secondary-foreground; /* Default body text is WHITE */
+    scroll-behavior: smooth;
+  }
+}
+
+/* Animations */
+@keyframes pulse-strong {
+  0%, 100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 hsl(var(--primary) / 0.7);
+  }
+  50% {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px 5px hsl(var(--primary) / 0.3);
+  }
+}
+.animate-pulse-strong {
+  animation: pulse-strong 2s infinite;
+}
+
+/* Additional style for testimonials as per request */
+.testimonial-text {
+  text-transform: none !important; /* Override global uppercase for testimonial content */
+  font-size: 0.875rem; /* Equivalent to text-sm */
+  line-height: 1.25rem; /* Equivalent to text-sm */
+}
+@media (min-width: 768px) { /* md breakpoint */
+  .testimonial-text {
+    font-size: 1rem; /* Equivalent to text-base */
+    line-height: 1.5rem; /* Equivalent to text-base */
+  }
+}
