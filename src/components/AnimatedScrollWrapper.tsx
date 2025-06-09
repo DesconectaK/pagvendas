@@ -1,5 +1,5 @@
 "use client";
-import { useEffect, useRef, useState, type ReactNode } from 'react';
+import React, { useEffect, useRef, useState, type ReactNode } from 'react';
 import { cn } from '@/lib/utils';
 
 type AnimationType = 'fade-in' | 'slide-in-bottom' | 'slide-in-left' | 'slide-in-right';
