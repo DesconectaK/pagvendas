@@ -21,11 +21,16 @@ const offer2Features = [
 
 const premiumBonus = { icon: <Gift className="h-6 w-6 text-yellow-400" />, text: "BÔNUS ESPECIAL: KIT TDAH/TEA" };
 
-const CHECKOUT_URL = "https://www.ggcheckout.com/checkout/v2/szpSXwDeeUaRVMyabYcS";
+const CHECKOUT_URL_PREMIUM = "https://www.ggcheckout.com/checkout/v2/szpSXwDeeUaRVMyabYcS";
+const CHECKOUT_URL_NORMAL = "https://www.ggcheckout.com/checkout/v2/BCbA2vxHRKOtokHWEUGU";
 
 export default function OfferSection() {
-  const redirectToCheckout = () => {
-    window.location.href = CHECKOUT_URL;
+  const redirectToCheckoutPremium = () => {
+    window.location.href = CHECKOUT_URL_PREMIUM;
+  };
+
+  const redirectToCheckoutNormal = () => {
+    window.location.href = CHECKOUT_URL_NORMAL;
   };
 
   return (
@@ -67,7 +72,7 @@ export default function OfferSection() {
                     </li>
                   </AnimatedScrollWrapper>
                 </ul>
-                <div className="mt-auto"> 
+                <div className="mt-auto">
                   <div className="my-3">
                     <p className="text-lg text-muted-foreground line-through">DE R$97,00</p>
                     <p className="text-primary mt-0">
@@ -78,8 +83,8 @@ export default function OfferSection() {
                   <p className="text-xs text-muted-foreground normal-case">Pagamento único. <span className='font-bold'>Acesso VITALÍCIO.</span> OFERTA LIMITADA!</p>
                 </div>
               </CardContent>
-              <CardFooter className="flex-col gap-2 pt-3 mt-auto p-6"> 
-                <AnimatedCtaButton onClick={redirectToCheckout} className="w-full text-lg py-3.5 px-6">
+              <CardFooter className="flex-col gap-2 pt-3 mt-auto p-6">
+                <AnimatedCtaButton onClick={redirectToCheckoutPremium} className="w-full text-lg py-3.5 px-6">
                   QUERO A TRANSFORMAÇÃO COMPLETA!
                 </AnimatedCtaButton>
                  <p className="text-xs text-muted-foreground normal-case">COMPRA 100% SEGURA. DECISÃO INTELIGENTE!</p>
@@ -90,7 +95,7 @@ export default function OfferSection() {
           {/* Offer 1 - "Normal" */}
           <AnimatedScrollWrapper animationType="fade-in" delay={200} duration={1000}>
             <Card className="bg-background border-primary/50 shadow-xl flex flex-col h-full">
-              <CardHeader className="pb-4 pt-[5rem] md:pt-[5.5rem] p-6"> 
+              <CardHeader className="pb-4 pt-[5rem] md:pt-[5.5rem] p-6">
                 <CardTitle className="text-2xl md:text-3xl font-bold">MÉTODO <span className='text-primary'>NORMAL</span></CardTitle>
                 <CardDescription className="text-md text-card-foreground pt-1 normal-case" dangerouslySetInnerHTML={{ __html: "Um <span class='font-bold'>primeiro passo</span> para sentir a <span class='font-bold'>diferença no dia a dia</span>. Comece a <span class='font-bold'>resgatar os momentos de brincadeira</span>." }} />
               </CardHeader>
@@ -105,7 +110,7 @@ export default function OfferSection() {
                     </AnimatedScrollWrapper>
                   ))}
                 </ul>
-                <div className="mt-auto"> 
+                <div className="mt-auto">
                   <div className="my-3">
                     <p className="text-md text-muted-foreground line-through">DE R$19,90</p>
                     <p className="text-primary mt-0">
@@ -116,10 +121,10 @@ export default function OfferSection() {
                   <p className="text-xs text-muted-foreground normal-case">Pagamento único. Acesso imediato.</p>
                 </div>
               </CardContent>
-              <CardFooter className="flex-col gap-2 pt-3 mt-auto p-6"> 
-                <Button 
-                  onClick={redirectToCheckout} 
-                  variant="outline" 
+              <CardFooter className="flex-col gap-2 pt-3 mt-auto p-6">
+                <Button
+                  onClick={redirectToCheckoutNormal}
+                  variant="outline"
                   className="w-full text-md bg-primary text-primary-foreground hover:bg-primary/90 font-bold py-3 px-6 rounded-lg shadow-md border-primary/50 hover:border-primary"
                 >
                   QUERO COMEÇAR A MUDANÇA!
