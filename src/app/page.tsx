@@ -8,7 +8,7 @@ import ActivityHighlightsSection from '@/components/sections/ActivityHighlightsS
 // import KidsGallerySection from '@/components/sections/KidsGallerySection'; // Seção removida
 import OfferSection from '@/components/sections/OfferSection';
 import ObjectionsSection from '@/components/sections/ObjectionsSection';
-import FaqSection from '@/components/sections/FaqSection';
+// import FaqSection from '@/components/sections/FaqSection'; // Seção Removida
 import GuaranteeSection from '@/components/sections/GuaranteeSection';
 import PurchaseNotification from '@/components/PurchaseNotification';
 import CurrentYear from '@/components/CurrentYear';
@@ -26,7 +26,7 @@ export default function HomePage() {
         <OfferSection />
       </div>
       <ObjectionsSection />
-      <FaqSection />
+      {/* <FaqSection /> */} {/* Seção Removida */}
       <GuaranteeSection />
       <PurchaseNotification />
       <footer className="w-full py-8 text-center bg-card text-card-foreground">

@@ -24,6 +24,16 @@ const objections = [
     id: "obj4",
     question: "O INVESTIMENTO É <span class='font-bold text-primary'>ALTO</span> PARA MIM?",
     answer: "Quanto vale <span class='font-bold'>sua paz</span>? A <span class='font-bold'>alegria e o futuro</span> do seu filho? É <span class='font-bold'>MENOS QUE UM LANCHE</span>, mas o retorno é <span class='font-bold'>PARA A VIDA TODA</span>. E com a garantia, o risco é <span class='font-bold'>TODO NOSSO!</span>",
+  },
+  {
+    id: "obj5",
+    question: "E SE MEU FILHO TIVER <span class='font-bold text-primary'>TDAH OU TEA</span>?",
+    answer: "Perfeito! O método foi <span class='font-bold'>pensado com carinho</span> para incluir todos. As atividades ajudam no <span class='font-bold'>foco, calma e desenvolvimento</span>, sendo um <span class='font-bold'>grande apoio</span> para crianças com essas características. <span class='font-bold'>VOCÊ VAI SE SURPREENDER!</span>",
+  },
+  {
+    id: "obj6",
+    question: "PRECISO DE <span class='font-bold text-primary'>HABILIDADES ESPECIAIS</span> PARA APLICAR?",
+    answer: "De jeito nenhum! O método é <span class='font-bold'>SIMPLES e INTUITIVO</span>. Tudo é explicado de forma clara. Você só precisa de <span class='font-bold'>AMOR e VONTADE</span> de se conectar com seu filho. <span class='font-bold'>NÓS TE GUIAMOS!</span>",
   }
 ];
 
