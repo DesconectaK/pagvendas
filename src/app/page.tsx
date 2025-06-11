@@ -1,17 +1,33 @@
 
+import dynamic from 'next/dynamic';
 import VslSection from '@/components/sections/VslSection';
-// import IntroSection from '@/components/sections/IntroSection'; // Removido conforme estratégia VSL
-import ProblemSection from '@/components/sections/ProblemSection';
-import BenefitsSection from '@/components/sections/BenefitsSection';
-import TestimonialsSection from '@/components/sections/TestimonialsSection';
-import ActivityHighlightsSection from '@/components/sections/ActivityHighlightsSection'; // Nova seção
-// import KidsGallerySection from '@/components/sections/KidsGallerySection'; // Seção removida
-import OfferSection from '@/components/sections/OfferSection';
-import ObjectionsSection from '@/components/sections/ObjectionsSection';
-// import FaqSection from '@/components/sections/FaqSection'; // Seção Removida
-import GuaranteeSection from '@/components/sections/GuaranteeSection';
 import PurchaseNotification from '@/components/PurchaseNotification';
 import CurrentYear from '@/components/CurrentYear';
+import { Skeleton } from '@/components/ui/skeleton'; // For loading state
+
+// Dynamically import sections that are typically below the fold
+const ProblemSection = dynamic(() => import('@/components/sections/ProblemSection'), {
+  loading: () => <div className="w-full h-96 flex items-center justify-center"><Skeleton className="h-32 w-3/4" /></div>
+});
+const BenefitsSection = dynamic(() => import('@/components/sections/BenefitsSection'), {
+  loading: () => <div className="w-full h-96 flex items-center justify-center"><Skeleton className="h-32 w-3/4" /></div>
+});
+const TestimonialsSection = dynamic(() => import('@/components/sections/TestimonialsSection'), {
+  loading: () => <div className="w-full h-96 flex items-center justify-center"><Skeleton className="h-32 w-3/4" /></div>
+});
+const ActivityHighlightsSection = dynamic(() => import('@/components/sections/ActivityHighlightsSection'), {
+  loading: () => <div className="w-full h-96 flex items-center justify-center"><Skeleton className="h-32 w-3/4" /></div>
+});
+const OfferSection = dynamic(() => import('@/components/sections/OfferSection'), {
+  loading: () => <div className="w-full h-96 flex items-center justify-center"><Skeleton className="h-32 w-3/4" /></div>
+});
+const ObjectionsSection = dynamic(() => import('@/components/sections/ObjectionsSection'), {
+  loading: () => <div className="w-full h-96 flex items-center justify-center"><Skeleton className="h-32 w-3/4" /></div>
+});
+const GuaranteeSection = dynamic(() => import('@/components/sections/GuaranteeSection'), {
+  loading: () => <div className="w-full h-64 flex items-center justify-center"><Skeleton className="h-24 w-3/4" /></div>
+});
+
 
 export default function HomePage() {
   return (
@@ -20,13 +36,11 @@ export default function HomePage() {
       <ProblemSection />
       <BenefitsSection />
       <TestimonialsSection />
-      <ActivityHighlightsSection /> {/* Nova seção adicionada aqui */}
-      {/* ID da seção de oferta para scroll */}
+      <ActivityHighlightsSection />
       <div id="product-offer-details">
         <OfferSection />
       </div>
       <ObjectionsSection />
-      {/* <FaqSection /> */} {/* Seção Removida */}
       <GuaranteeSection />
       <PurchaseNotification />
       <footer className="w-full py-8 text-center bg-card text-card-foreground">
