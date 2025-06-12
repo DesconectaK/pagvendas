@@ -1,5 +1,6 @@
 
 import type { Metadata } from 'next';
+import Script from 'next/script';
 import './globals.css';
 import ClientSideToaster from '@/components/ClientSideToaster';
 import { Roboto } from 'next/font/google';
@@ -35,6 +36,17 @@ export default function RootLayout({
         <link rel="dns-prefetch" href="https://images.converteai.net" />
         <link rel="dns-prefetch" href="https://api.vturb.com.br" />
 
+        {/* Utmify Pixel Script */}
+        <Script id="utmify-pixel-setup" strategy="afterInteractive">
+          {`
+            window.pixelId = "684a98a46959ede40459dd61";
+            var a = document.createElement("script");
+            a.setAttribute("async", "");
+            a.setAttribute("defer", "");
+            a.setAttribute("src", "https://cdn.utmify.com.br/scripts/pixel/pixel.js");
+            document.head.appendChild(a);
+          `}
+        </Script>
       </head>
       <body className={`${roboto.variable} font-body antialiased`} suppressHydrationWarning={true}>
         {children}
