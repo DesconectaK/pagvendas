@@ -10,8 +10,8 @@ const vTurbAccountId = "203430db-ad79-48e2-a8e6-4634be611b23";
 
 const videoTestimonialsData = [
   {
-    videoId: "68466a5bc6681578ee740ab0", 
-    thumbnailUrl: "https://images.converteai.net/203430db-ad79-48e2-a8e6-4634be611b23/players/68466a5bc6681578ee740ab0/thumbnail.jpg",
+    videoId: "684b8fc8ad7cf9fd032dfd4a", 
+    thumbnailUrl: "https://images.converteai.net/203430db-ad79-48e2-a8e6-4634be611b23/players/684b8fc8ad7cf9fd032dfd4a/thumbnail.jpg",
     altText: "Depoimento em vídeo de mãe sobre o Método Desconecta",
     dataAiHint: "testimonial video parent",
   },
