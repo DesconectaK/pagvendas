@@ -47,11 +47,11 @@ export default function FaqSection() {
           <Accordion type="single" collapsible className="w-full text-left">
             {faqs.map((faq) => (
               <AccordionItem value={faq.id} key={faq.id} className="border-primary/30 mb-3 rounded-lg bg-card overflow-hidden">
-                <AccordionTrigger className="p-5 text-md md:text-lg font-semibold hover:no-underline text-primary-foreground hover:bg-primary/10">
+                <AccordionTrigger className="p-5 text-md md:text-lg font-semibold hover:no-underline text-foreground hover:bg-primary/10"> {/* text-primary-foreground changed to text-foreground */}
                    <HelpCircle className="h-5 w-5 mr-2.5 text-primary shrink-0" />
                   <span dangerouslySetInnerHTML={{ __html: faq.question.replace(/class='/g, "className='") }} />
                 </AccordionTrigger>
-                <AccordionContent className="p-5 pt-0 text-sm md:text-base leading-relaxed text-muted-foreground normal-case">
+                <AccordionContent className="p-5 pt-0 text-sm md:text-base leading-relaxed text-foreground normal-case"> {/* text-muted-foreground changed to text-foreground */}
                   <span dangerouslySetInnerHTML={{ __html: faq.answer.replace(/class='/g, "className='") }} />
                 </AccordionContent>
               </AccordionItem>

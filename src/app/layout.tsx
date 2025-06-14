@@ -3,13 +3,7 @@ import type { Metadata } from 'next';
 import Script from 'next/script';
 import './globals.css';
 import ClientSideToaster from '@/components/ClientSideToaster';
-import { Roboto } from 'next/font/google';
-
-const roboto = Roboto({
-  subsets: ['latin'],
-  weight: ['400', '700', '900'],
-  variable: '--font-roboto',
-});
+// Roboto font is no longer used, Poppins will be linked directly
 
 export const metadata: Metadata = {
   title: 'MÉTODO DESCONECTA',
@@ -30,33 +24,34 @@ export default function RootLayout({
         <style dangerouslySetInnerHTML={{ __html: `
           body {
             background-color: #ffffff;
-            color: #1a1a1a;
-            font-family: 'Poppins', sans-serif;
+            color: #000000;
+            font-family: 'Poppins', 'Inter', sans-serif;
             font-size: 16px;
             margin: 0;
             padding: 0;
+            text-transform: uppercase;
           }
           h1, h2, h3 {
             font-weight: 700;
             line-height: 1.4;
           }
           p {
-            line-height: 1.6;
+            line-height: 1.5em; /* Updated line-height */
             font-weight: 400;
           }
           .section {
-            padding: 24px 20px;
+            padding: 40px 16px; /* Updated padding */
             max-width: 700px;
             margin: auto;
           }
           .cta-btn {
-            background: #ff3d00;
+            background: #FF7A00; /* Updated background */
             color: white;
             font-size: 18px;
             padding: 16px 24px;
             border-radius: 8px;
             text-align: center;
-            font-weight: 700;
+            font-weight: 600; /* Updated font-weight */
             text-decoration: none;
             display: inline-block;
             margin-top: 20px;
@@ -73,7 +68,7 @@ export default function RootLayout({
         <link rel="preload" href="https://scripts.converteai.net/203430db-ad79-48e2-a8e6-4634be611b23/players/684b8fc8ad7cf9fd032dfd4a/player.js" as="script" />
         <link rel="preload" href="https://images.converteai.net/203430db-ad79-48e2-a8e6-4634be611b23/players/684b8fc8ad7cf9fd032dfd4a/thumbnail.jpg" as="image" />
         <link rel="preload" href="https://cdn.converteai.net/203430db-ad79-48e2-a8e6-4634be611b23/684b8fc3fb36cb9f760dcf4e/main.m3u8" as="fetch" />
-
+        
         {/* Image Preload (User added) */}
         <link rel="preload" as="image" href="URL-DA-IMAGEM" type="image/webp" />
 
@@ -110,7 +105,7 @@ export default function RootLayout({
           `}
         </Script>
       </head>
-      <body className={`${roboto.variable} font-body antialiased`} suppressHydrationWarning={true}>
+      <body className="font-body antialiased" suppressHydrationWarning={true}> {/* Removed roboto.variable and font-body will use Poppins from inline style */}
         {children}
         <ClientSideToaster />
       </body>
