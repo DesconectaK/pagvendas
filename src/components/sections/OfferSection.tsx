@@ -85,7 +85,7 @@ export default function OfferSection() {
               </CardContent>
               <CardFooter className="flex-col gap-2 pt-3 mt-auto p-6">
                 <AnimatedCtaButton onClick={redirectToCheckoutPremium} className="w-full text-lg py-3.5 px-6">
-                  QUERO A TRANSFORMAÇÃO COMPLETA!
+                  TRANSFORMAR MINHA CASA HOJE
                 </AnimatedCtaButton>
                  <p className="text-xs text-muted-foreground normal-case">COMPRA 100% SEGURA. DECISÃO INTELIGENTE!</p>
               </CardFooter>

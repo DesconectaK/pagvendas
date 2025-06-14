@@ -121,7 +121,7 @@ export default function TestimonialsSection() {
           </p>
           <div className="flex items-center justify-center text-xl text-primary font-bold mb-10">
             <Users size={32} className="mr-3" />
-            <span>+ DE <span className='font-black'>7.200 FAMÍLIAS</span> FELIZES!</span>
+            <span dangerouslySetInnerHTML={{ __html: "+ de <span class='font-black'>7.200 FAMÍLIAS</span> TRANSFORMADAS!" }} />
           </div>
         </AnimatedScrollWrapper>
 
@@ -170,4 +170,3 @@ export default function TestimonialsSection() {
     </section>
   );
 }
-

@@ -21,7 +21,7 @@ export default function GuaranteeSection() {
             onClick={redirectToCheckout}
             className="w-full rounded-lg transform transition-all duration-300 ease-in-out bg-primary-foreground text-primary hover:bg-white/90 font-bold text-sm md:text-base py-2 px-5 shadow-md animate-pulse-strong" // Adjusted classes for size, added w-full
           >
-            QUERO TRANSFORMAR MINHA FAMÍLIA (SEM RISCOS)!
+            COMECE A MUDANÇA AGORA!
           </Button>
         </AnimatedScrollWrapper>
       </div>

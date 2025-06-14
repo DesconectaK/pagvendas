@@ -41,7 +41,7 @@ export default function VslSection() {
     <AnimatedScrollWrapper animationType="fade-in" duration={1000}>
       <section className="min-h-screen w-full flex flex-col items-center justify-center p-1 md:p-2 relative text-center overflow-hidden">
         <AnimatedScrollWrapper animationType="slide-in-bottom" delay={200} duration={800}>
-          <p className="text-md sm:text-lg md:text-xl mb-5 max-w-2xl normal-case px-2" dangerouslySetInnerHTML={{ __html: "SEU FILHO <span class='font-bold text-primary'>HIPNOTIZADO PELO CELULAR</span>? CHEGA DE GUERRAS DIÁRIAS! RECUPERE A <span class='font-bold text-primary'>PAZ</span> E A <span class='font-bold text-primary'>ALEGRIA EM FAMÍLIA</span>." }} />
+          <p className="text-md sm:text-lg md:text-xl mb-5 max-w-2xl normal-case px-2" dangerouslySetInnerHTML={{ __html: "Seu filho HIPNOTIZADO pelo celular? Chega de guerras diárias!" }} />
         </AnimatedScrollWrapper>
 
         <AnimatedScrollWrapper animationType="fade-in" delay={400} duration={1000}>
@@ -95,7 +95,7 @@ export default function VslSection() {
         </AnimatedScrollWrapper>
 
         <AnimatedScrollWrapper animationType="slide-in-bottom" delay={600} duration={800}>
-          <p className="mt-6 text-md sm:text-lg md:text-xl max-w-xl normal-case px-2" dangerouslySetInnerHTML={{ __html: "DESCUBRA O MÉTODO QUE ESTÁ <span class='font-bold text-primary'>DEVOLVENDO A INFÂNCIA</span> ÀS CRIANÇAS E A <span class='font-bold text-primary'>SERENIDADE</span> ÀS MÃES. <span class='font-bold'>ASSISTA AGORA!</span>" }} />
+          <p className="mt-6 text-md sm:text-lg md:text-xl max-w-xl normal-case px-2" dangerouslySetInnerHTML={{ __html: "Descubra o método que devolve a infância às crianças e a paz às mães." }} />
         </AnimatedScrollWrapper>
         <AnimatedScrollWrapper animationType="fade-in" delay={800} duration={1000} className="mt-8 mb-4 w-full max-w-md px-4">
           <AnimatedCtaButton onClick={scrollToOffer} className="text-lg md:text-xl py-4 px-8 w-full">
