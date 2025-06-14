@@ -8,17 +8,17 @@ const falseSolutions = [
   {
     icon: <XCircle className="h-10 w-10 text-primary mb-3" />,
     title: "PROIBIR? SÓ PIORA!",
-    description: "GERA <span class='font-bold text-primary'>BIRRA E FRUSTRAÇÃO</span>, NÃO EDUCA.",
+    description: "GERA <span style='color:#E53935; font-weight:600;'>BIRRA E FRUSTRAÇÃO</span>, NÃO EDUCA.",
   },
   {
     icon: <AlertTriangle className="h-10 w-10 text-primary mb-3" />,
     title: "OUTRA TELA? MESMO VÍCIO!",
-    description: "TABLET OU TV SÓ <span class='font-bold text-primary'>MUDAM O APARELHO</span>, NÃO O PROBLEMA.",
+    description: "TABLET OU TV SÓ <span style='color:#E53935; font-weight:600;'>MUDAM O APARELHO</span>, NÃO O PROBLEMA.",
   },
   {
     icon: <RotateCcw className="h-10 w-10 text-primary mb-3" />,
     title: "IGNORAR? BOMBA-RELÓGIO!",
-    description: "O VÍCIO CRESCE, OS <span class='font-bold text-primary'>PREJUÍZOS TAMBÉM</span>. AJA AGORA!",
+    description: "O <span style='color:#E53935; font-weight:600;'>VÍCIO CRESCE</span>, OS <span style='color:#E53935; font-weight:600;'>PREJUÍZOS TAMBÉM</span>. AJA AGORA!",
   },
 ];
 
@@ -28,7 +28,7 @@ export default function ProblemSection() {
       <div className="max-w-4xl mx-auto text-center">
         <AnimatedScrollWrapper animationType="slide-in-bottom" duration={800}>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-black mb-4 text-primary font-headline" dangerouslySetInnerHTML={{ __html: "CANSADA DESSA LUTA DIÁRIA?" }} />
-          <p className="text-lg sm:text-xl md:text-2xl mb-10 leading-relaxed normal-case" dangerouslySetInnerHTML={{ __html: "BIRRAS POR TELAS? CULPA POR CEDER SÓ PARA TER <span class='font-bold'>UM MINUTO DE PAZ</span>? <span class='font-bold text-primary'>VOCÊ MERECE AJUDA.</span>" }} />
+          <p className="text-lg sm:text-xl md:text-2xl mb-10 leading-relaxed normal-case" dangerouslySetInnerHTML={{ __html: "<span style='color:#E53935; font-weight:600;'>BIRRAS</span> POR TELAS? <span style='color:#E53935; font-weight:600;'>CULPA</span> POR CEDER SÓ PARA TER <span class='font-bold'>UM MINUTO DE PAZ</span>? <span class='font-bold text-primary'>VOCÊ MERECE AJUDA.</span>" }} />
         </AnimatedScrollWrapper>
         
         <AnimatedScrollWrapper animationType="fade-in" delay={400} duration={800}>

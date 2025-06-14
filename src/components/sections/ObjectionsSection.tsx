@@ -17,7 +17,7 @@ const objections = [
   },
   {
     id: "obj3",
-    question: "JÁ TENTEI DE TUDO... <span class='font-bold text-primary'>POR QUE AGORA DARIA CERTO?</span>",
+    question: "<span style='color:#E53935; font-weight:600;'>JÁ TENTEI DE TUDO</span>... <span class='font-bold text-primary'>POR QUE AGORA DARIA CERTO?</span>",
     answer: "Este não é 'mais um'. É uma abordagem <span class='font-bold'>COMPLETA e DIVERTIDA</span>, criada por especialistas. Dê essa <span class='font-bold'>CHANCE REAL</span> de transformação. Milhares de mães conseguiram!",
   },
   {
@@ -52,7 +52,7 @@ export default function ObjectionsSection() {
           <Accordion type="single" collapsible className="w-full text-left">
             {objections.map((obj) => (
               <AccordionItem value={obj.id} key={obj.id} className="border-primary/30 mb-3 rounded-lg bg-card overflow-hidden">
-                <AccordionTrigger className="p-5 text-md md:text-lg font-semibold hover:no-underline text-primary-foreground hover:bg-primary/10">
+                <AccordionTrigger className="p-5 text-md md:text-lg font-semibold hover:no-underline text-foreground hover:bg-primary/10"> {/* Adjusted text color from primary-foreground to foreground */}
                   <CheckCircle2 className="h-5 w-5 mr-2.5 text-primary shrink-0" />
                   <span dangerouslySetInnerHTML={{ __html: obj.question.replace(/class='/g, "className='") }} />
                 </AccordionTrigger>
