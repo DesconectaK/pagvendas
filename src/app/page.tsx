@@ -24,6 +24,9 @@ const OfferSection = dynamic(() => import('@/components/sections/OfferSection'),
 const ObjectionsSection = dynamic(() => import('@/components/sections/ObjectionsSection'), {
   loading: () => <div className="w-full h-96 flex items-center justify-center"><Skeleton className="h-32 w-3/4" /></div>
 });
+const FaqSection = dynamic(() => import('@/components/sections/FaqSection'), {
+  loading: () => <div className="w-full h-96 flex items-center justify-center"><Skeleton className="h-32 w-3/4" /></div>
+});
 const GuaranteeSection = dynamic(() => import('@/components/sections/GuaranteeSection'), {
   loading: () => <div className="w-full h-64 flex items-center justify-center"><Skeleton className="h-24 w-3/4" /></div>
 });
@@ -41,6 +44,7 @@ export default function HomePage() {
         <OfferSection />
       </div>
       <ObjectionsSection />
+      <FaqSection />
       <GuaranteeSection />
       <PurchaseNotification />
       <footer className="w-full py-8 text-center bg-card text-card-foreground">
