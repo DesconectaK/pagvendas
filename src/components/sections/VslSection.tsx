@@ -61,7 +61,7 @@ export default function VslSection() {
               >
                 <img
                   id={`thumb_${vturbVideoId}`}
-                  alt="Prévia do vídeo Método Desconecta"
+                  alt="Vídeo demonstrativo do Método Desconecta para atividades criativas sem tela para crianças"
                   src="https://images.converteai.net/203430db-ad79-48e2-a8e6-4634be611b23/players/68473bf78ce134c08f091906/thumbnail.jpg" // Updated thumbnail
                   style={{
                     position: 'absolute',

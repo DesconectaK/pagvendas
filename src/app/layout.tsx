@@ -6,8 +6,8 @@ import ClientSideToaster from '@/components/ClientSideToaster';
 // Poppins font is linked directly, Roboto is no longer used.
 
 export const metadata: Metadata = {
-  title: 'MÉTODO DESCONECTA',
-  description: 'Transforme o tempo de tela do seu filho em diversão criativa e aprendizado!',
+  title: '100 Atividades para Libertar Seu Filho do Celular | Método Criativo',
+  description: 'Transforme a rotina da sua família com atividades criativas e sem tela. Método com mais de 7.200 famílias impactadas. Veja como!',
 };
 
 export default function RootLayout({
