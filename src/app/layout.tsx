@@ -3,7 +3,7 @@ import type { Metadata } from 'next';
 import Script from 'next/script';
 import './globals.css';
 import ClientSideToaster from '@/components/ClientSideToaster';
-// Roboto font is no longer used, Poppins will be linked directly
+// Poppins font is linked directly, Roboto is no longer used.
 
 export const metadata: Metadata = {
   title: 'MÉTODO DESCONECTA',
@@ -23,8 +23,8 @@ export default function RootLayout({
         {/* Inline Styles */}
         <style dangerouslySetInnerHTML={{ __html: `
           body {
-            background-color: #ffffff;
-            color: #000000;
+            background-color: #FFFFFF; /* Explicitly white */
+            color: #000000; /* Explicitly black */
             font-family: 'Poppins', 'Inter', sans-serif;
             font-size: 16px;
             margin: 0;
@@ -45,7 +45,7 @@ export default function RootLayout({
             margin: auto;
           }
           .cta-btn {
-            background: #FF7A00; /* Updated background */
+            background: #FF7A00; /* Updated background from previous #ff3d00 */
             color: white;
             font-size: 18px;
             padding: 16px 24px;
@@ -53,7 +53,9 @@ export default function RootLayout({
             text-align: center;
             font-weight: 600; /* Updated font-weight */
             text-decoration: none;
-            display: inline-block;
+            display: block; /* Changed from inline-block */
+            width: 100%; /* Added for full width */
+            box-sizing: border-box; /* Added for better width calculation */
             margin-top: 20px;
           }
         `}} />

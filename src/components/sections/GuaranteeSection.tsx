@@ -19,7 +19,7 @@ export default function GuaranteeSection() {
           <p className="text-sm sm:text-base mb-4 leading-relaxed normal-case max-w-md" dangerouslySetInnerHTML={{ __html: "Teste o Método por <span class='font-bold'>7 DIAS</span>. Ame ou <span class='font-bold'>100% DO SEU DINHEIRO DE VOLTA</span>. Simples assim!" }} />
           <Button  // Using standard Button for more control over specific classes
             onClick={redirectToCheckout}
-            className="rounded-lg transform transition-all duration-300 ease-in-out bg-primary-foreground text-primary hover:bg-white/90 font-bold text-sm md:text-base py-2 px-5 shadow-md animate-pulse-strong" // Adjusted classes for size
+            className="w-full rounded-lg transform transition-all duration-300 ease-in-out bg-primary-foreground text-primary hover:bg-white/90 font-bold text-sm md:text-base py-2 px-5 shadow-md animate-pulse-strong" // Adjusted classes for size, added w-full
           >
             QUERO TRANSFORMAR MINHA FAMÍLIA (SEM RISCOS)!
           </Button>

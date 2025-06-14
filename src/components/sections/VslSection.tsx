@@ -97,8 +97,8 @@ export default function VslSection() {
         <AnimatedScrollWrapper animationType="slide-in-bottom" delay={600} duration={800}>
           <p className="mt-6 text-md sm:text-lg md:text-xl max-w-xl normal-case px-2" dangerouslySetInnerHTML={{ __html: "DESCUBRA O MÉTODO QUE ESTÁ <span class='font-bold text-primary'>DEVOLVENDO A INFÂNCIA</span> ÀS CRIANÇAS E A <span class='font-bold text-primary'>SERENIDADE</span> ÀS MÃES. <span class='font-bold'>ASSISTA AGORA!</span>" }} />
         </AnimatedScrollWrapper>
-        <AnimatedScrollWrapper animationType="fade-in" delay={800} duration={1000} className="mt-8 mb-4">
-          <AnimatedCtaButton onClick={scrollToOffer} className="text-lg md:text-xl py-4 px-8">
+        <AnimatedScrollWrapper animationType="fade-in" delay={800} duration={1000} className="mt-8 mb-4 w-full max-w-md px-4">
+          <AnimatedCtaButton onClick={scrollToOffer} className="text-lg md:text-xl py-4 px-8 w-full">
             QUERO MINHA FAMÍLIA FELIZ DE NOVO!
           </AnimatedCtaButton>
         </AnimatedScrollWrapper>

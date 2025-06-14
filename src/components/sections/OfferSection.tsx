@@ -19,7 +19,7 @@ const offer2Features = [
   { icon: <Music className="h-5 w-5 text-primary" />, text: "+50 Atividades Musicais" },
 ];
 
-const premiumBonus = { icon: <Gift className="h-6 w-6 text-primary" />, text: "BÔNUS ESPECIAL: KIT TDAH/TEA" }; // Icon color changed to primary
+const premiumBonus = { icon: <Gift className="h-6 w-6 text-primary" />, text: "BÔNUS ESPECIAL: KIT TDAH/TEA" };
 
 const CHECKOUT_URL_PREMIUM = "https://www.ggcheckout.com/checkout/v2/szpSXwDeeUaRVMyabYcS";
 const CHECKOUT_URL_NORMAL = "https://www.ggcheckout.com/checkout/v2/BCbA2vxHRKOtokHWEUGU";
@@ -66,9 +66,9 @@ export default function OfferSection() {
                     </AnimatedScrollWrapper>
                   ))}
                   <AnimatedScrollWrapper animationType="slide-in-left" delay={offer2Features.length * 50 + 200} duration={500}>
-                    <li className="flex items-center gap-3 p-3 bg-primary/20 rounded-md border border-primary/50 shadow-inner my-2"> {/* Border color changed from yellow */}
+                    <li className="flex items-center gap-3 p-3 bg-primary/20 rounded-md border border-primary/50 shadow-inner my-2">
                       {premiumBonus.icon}
-                      <span className="text-md normal-case font-semibold text-primary">{premiumBonus.text}</span> {/* Text color changed to primary */}
+                      <span className="text-md normal-case font-semibold text-primary">{premiumBonus.text}</span>
                     </li>
                   </AnimatedScrollWrapper>
                 </ul>
